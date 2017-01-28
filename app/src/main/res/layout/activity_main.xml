@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.canin.MainActivity">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:src="@drawable/icon"
+        android:background="#364858"
+        android:scaleType="centerInside"/>
+
+    <LinearLayout
+        android:id="@+id/linelayout"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="65dp">
+
+        <ViewFlipper
+            android:id="@+id/flip"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <ImageView
+                android:id="@+id/pict0"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/pict0"/>
+
+            <ImageView
+                android:id="@+id/pict1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/pict1"/>
+
+            <ImageView
+                android:id="@+id/pict2"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/pict2"/>
+
+            <ImageView
+                android:id="@+id/pict3"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/pict3"/>
+
+            <ImageView
+                android:id="@+id/pict4"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/pict4"/>
+
+            <ImageView
+                android:id="@+id/pict5"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/pict5"/>
+
+            <ImageView
+                android:id="@+id/pict6"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/pict6"/>
+
+            <ImageView
+                android:id="@+id/pict7"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/pict7"/>
+        </ViewFlipper>
+    </LinearLayout>
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:layout_below="@id/linelayout">
+        <RelativeLayout
+            android:id="@+id/dessous"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:text="@string/title"/>
+            <RelativeLayout
+                android:id="@+id/cadre"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:layout_below="@id/title"
+                android:background="#A2BFD8">
+            <ImageView
+                android:id="@+id/location_image"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/holder"/>
+
+            <TextView
+                android:id="@+id/location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/location_image"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="16sp"
+                android:text="@string/location"/>
+
+            <ImageView
+                android:id="@+id/phone"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_below="@id/location_image"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="20dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/phone"/>
+
+            <TextView
+                android:id="@+id/phone_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/location_image"
+                android:layout_toRightOf="@id/phone"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="16sp"
+                android:text="@string/phone"/>
+
+            <ImageView
+                android:id="@+id/clock"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_below="@id/phone"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="20dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/clock"/>
+
+            <TextView
+                android:id="@+id/clock_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/phone"
+                android:layout_toRightOf="@id/clock"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="16sp"
+                android:text="@string/clock"/>
+            </RelativeLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/description"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_below="@id/cadre"/>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

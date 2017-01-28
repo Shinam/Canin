@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Canin</string>
+    <string name="title">Gregory \nComportementaliste et Educateur Canin</string>
+    <string name="location">Rue du premier de ligne 3
+        &#xA;Verviers, Liège, Belgique</string>
+    <string name="phone">0497.72.06.99</string>
+    <string name="clock">Ouvert tous les jours
+        &#xA;de 9 H 00 à 23 H 00</string>
+    <string name="description">Je vous aide à résoudre n\'importe quel problème que vous pourriez rencontrer avec votre chien :
+\n
+\n- Agressivité envers l\'homme
+\n- Grognement
+\n- Agressivité envers d\'autres chiens
+\n- Propreté
+\n;- Obéissance
+\n- Aboiement
+\n- Saut sur les gens
+\n- Peur
+\n- Education du chiot
+\n
+\nTout ceci peut-être résolu assez facilement, il suffit juste de prendre le temps pour régler les problèmes afin d\'avoir une relation beaucoup plus agréable et un chien mieux dans sa peau !</string>
+</resources>
