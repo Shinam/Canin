@@ -126,6 +126,7 @@
                 android:layout_marginTop="8dp"
                 android:layout_marginLeft="10dp"
                 android:textSize="16sp"
+                android:autoLink="map"
                 android:text="@string/location"/>
 
             <ImageView
@@ -147,6 +148,7 @@
                 android:layout_marginTop="25dp"
                 android:layout_marginLeft="10dp"
                 android:textSize="16sp"
+                android:autoLink="phone"
                 android:text="@string/phone"/>
 
             <ImageView
@@ -171,6 +173,7 @@
                 android:text="@string/clock"/>
             </RelativeLayout>
             <TextView
+                android:id="@+id/description"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:text="@string/description"
@@ -178,6 +181,84 @@
                 android:layout_marginTop="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_below="@id/cadre"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:layout_below="@id/description"
+                android:background="#A2BFD8"
+                android:layout_marginBottom="16dp">
+
+                <ImageView
+                    android:id="@+id/email"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="10dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/envelope"
+                    android:layout_marginBottom="10dp"/>
+
+                <TextView
+                    android:id="@+id/email_texte"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@id/email"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="16sp"
+                    android:text="@string/email"
+                    android:autoLink="email"
+                    android:linksClickable="true"/>
+
+                <ImageView
+                    android:id="@+id/site"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="10dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/site"
+                    android:layout_below="@id/email"
+                    android:layout_marginBottom="10dp"/>
+
+                <TextView
+                    android:id="@+id/site_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@id/site"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="16sp"
+                    android:text="@string/site"
+                    android:layout_below="@id/email"
+                    android:autoLink="web"
+                    android:linksClickable="true"/>
+
+                <ImageView
+                    android:id="@+id/facebook"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="10dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/facebook"
+                    android:layout_below="@id/site"
+                    android:layout_marginBottom="10dp"/>
+
+                <TextView
+                    android:id="@+id/facebook_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@id/site"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="16sp"
+                    android:text="@string/facebook"
+                    android:layout_below="@id/site" />
+            </RelativeLayout>
         </RelativeLayout>
     </ScrollView>
 </RelativeLayout>
